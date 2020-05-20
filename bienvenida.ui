@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>867</width>
+    <height>604</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>867</width>
+    <height>604</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Simulador GRWAVE</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*Cambiamos el color de la ventana*/
+	#MainWindow{
+		background-color: rgb(245, 245, 245);
+	}
+
+	/*Estilos para el botón*/
+	#button_iniciar, #button_iniciar_2{
+		border: 1px solid;
+		background-color: rgb(0, 200, 60);
+		color: #fff;
+		border-color: rgb(65, 65, 65);
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	
+	/*Definimos el estilo para un efecto hover sobre el botón,
+	este cambiará su background cuando pasemos el mouse por
+	encima*/
+	#button_iniciar:hover, #button_iniciar_2:hover{
+	background-color: rgb(16, 214, 96);
+	}
+
+
+	/*Definimos los estilos para los QLineEdit*/
+	QLineEdit{
+		border: 1px solid;
+		border-color: rgb(150,150, 150);
+	}
+
+	/*Definimos los estilos para los QLabel*/
+	QLabel{
+		font-family: 'Roboto';
+	}
+
+	/*Definimos los estilos para los QLabels cuyos nombres son
+	'label_usuario' y 'label-password'*/
+	#label_usuario, #label_password{
+		font-size: 17px;
+		color: #212121;
+	}
+	
+	/*Estilo para el QLable cuyo nombre es #label_login*/
+	#label_login{
+		font-size:30px;
+		color: #fff;
+	}
+
+	#button_limpiar, #button_limpiar_2{
+		border: 1px solid;
+		background-color: rgb(239, 239, 239);
+		color: rgb(65, 65, 65);
+		border-color: rgb(65, 65, 65);
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	#button_limpiar:hover,#button_limpiar_2:hover{
+	background-color: rgb(209, 209, 209);
+	}
+
+	#button_exportar,#button_exportar_2{
+		border: 1px solid;
+		background-color: rgb(239, 239, 239);
+		color: rgb(65, 65, 65);
+		border-color: rgb(65, 65, 65);
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	#button_exportar:hover, #button_exportar_2:hover{
+	background-color: rgb(209, 209, 209);
+	}
+
+	QGroupBox {
+    border: 1px solid;
+	border-color: rgb(166, 166, 166);
+	margin-top: 0.5em;
+	}
+
+	QGroupBox::title {
+    top: -6px;
+    left: 10px;
+	}
+	#button_cerrar, #button_cerrar_2{
+		border: 1px solid;
+		background-color: rgb(239, 239, 239);
+		color: rgb(65, 65, 65);
+		border-color: rgb(223, 22, 22);
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	#button_cerrar:hover,#button_cerrar_2:hover{
+	background-color: rgb(209, 209, 209);
+	}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>861</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>GroundWave Simulator</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>861</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(146, 146, 146);</string>
+    </property>
+    <property name="text">
+     <string>Este programa ha sido desarrollado para la representación y determinación de intensidad de campo eléctrico recibida por 
+ onda de superficie para frecuencias entre 10 kHZ y 30 MHz según la Rec. ITU-R P.368-9</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>867</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

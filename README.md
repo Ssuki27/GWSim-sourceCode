@@ -5,4 +5,6 @@ GroundWave Simulator ha sido desarrollado para la determinación y representaci�
 
 El archivo principal del que se debe partir para su ejecución es GRMain.py, correspondiente a la primera ventana de bienvenida.
 
-VentanaCalculos.py es la interfaz donde tienen lugar los cálculos tanto para terrenos homogéneos como para terrenos mixtos. Dentro de éste fichero se encuentran todas las posibles funciones a realizar. Su estructura base se ha realizado con el programa QtDesigner, que genera un archivo .ui (interfazCalculosStyle.ui) y posteriormente convertido a .py con la opción pyuic5 (interfazCalculosStyle.py).
+ventanaCalculos.py es la interfaz donde tienen lugar los cálculos tanto para terrenos homogéneos como para terrenos mixtos. Dentro de éste fichero se encuentran todas las posibles funciones a realizar. Su estructura base se ha realizado con el programa QtDesigner, que genera un archivo .ui (untitled.ui) y posteriormente convertido a .py con la opción pyuic5 (interfazCalculosStyle.py). Véase que se ha renombrado el archivo .py, interfazCalculosStyle.py y untitled.py son idénticos.
+
+Para las ventanas emergentes o popUp's se utiliza popUpWarning.py, con estructura de QtDesigner: popUpWarning.ui.
